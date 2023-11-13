@@ -121,7 +121,6 @@ $.getJSON('../geoJson/map.json', function (geoJson) {
 	*   绑定点击事件,点击每块地图后将其回调赋给params
 	*  */
 	map.on('click', function (params) {
-		const test = params.dataIndex;
 		//测试console.log(test, params.name, params.value);取到对应的数据集
 		window.location.href = 'https://search.bilibili.com/all?keyword=' + params.name;
 	});
