@@ -9,18 +9,18 @@ $.getJSON('../geoJson/map.json', function (geoJson) {
 	//map.hideLoading();
 	
 	/* 注册 */
-	echarts.registerMap('北方民族大学', geoJson);
+	echarts.registerMap('XXX大学', geoJson);
 	
 	/* 配置 */
 	map.setOption(
 		(option = {
 			title: {
-				text: '基于高光图谱的肉牛疾病检测系统',
-				subtext: '#养殖场养殖数量分布图#'
+				text: 'Title',
+				subtext: '#Title分布图#'
 			},
 			tooltip: {
 				trigger: 'item',
-				formatter: '{b} <br/> 该养殖场有{c}头牛~'
+				formatter: '{b} <br/> 该地区有{c}人~'
 			},
 			toolbox: {
 				//是否显示右侧控件
@@ -51,9 +51,9 @@ $.getJSON('../geoJson/map.json', function (geoJson) {
 			series: [
 				{
 					//地图标题...
-					name: '北方民族大学养殖场',
+					name: 'XXX大学养殖场',
 					type: 'map',
-					map: '北方民族大学',//要求与上面注册的地图一致(否则报错)
+					map: 'XXX大学',//要求与上面注册的地图一致(否则报错)
 					label: {
 						show: true
 					},
